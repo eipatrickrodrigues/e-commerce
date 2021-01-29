@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans+Condensed:wght@300&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -120,3 +121,96 @@ p{
     width: 100%;
     
 }
+
+.small-container .title{
+
+    position: relative;
+    text-align: center;
+    margin: 0 auto 80px;
+    color: #555555;
+    line-height: 30px;
+    padding-top: 1rem;
+}
+
+.small-container .title::after{
+
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+
+    color: #555555;
+    font-weight: 400;
+    font-size: 1.3rem;
+
+}
+
+p{
+    color: #555555;
+    font-size: 1.2rem;
+}
+
+.col-4:hover {
+
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+.offer{
+
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 8px;
+    padding: 20px 0;
+
+}
+
+
+.col-2 small{
+
+    font-size: 1.1rem;
+    color: #555555;
+}
+
+
+.col-3 .user{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial .col-3{
+
+    text-align: center;
+    padding: 10px 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+
+.testimonial .user img{
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
