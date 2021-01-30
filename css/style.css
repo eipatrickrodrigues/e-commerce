@@ -15,6 +15,7 @@ body{
 .hamburguer{
 
     right: 100%;
+    z-index: 150;
 }
 
 .navbar{
@@ -22,13 +23,27 @@ body{
     display: flex;
     align-items:center;
     padding: 1rem;
+    width: 100%;
+}
 
+
+.bag{
+
+    display: flex;
+    
+}
+
+.sidebar{
+
+    width: 50%;
+    margin-left: 60%;
 }
 
 nav {
 
-    flex: 1;
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }
 
 nav ul{
@@ -241,6 +256,9 @@ p{
     padding: 60px 0 20px;
     text-align: center;
 }
+.footer .footer-col-3{
+    list-style-type: none;
+}
 .footer h3{
 
     padding-bottom: 1.1rem;
@@ -293,22 +311,26 @@ p{
         box-shadow: 0.1rem 0.1rem 1px #000;
     }
 
+    .bag{
+
+        display: flex;
+        margin-left: 7rem;
+    }
 
     .sidebar{
 
         position: fixed;
         background: #c7b5b2;
-        width: 70%;
+        width: 60%;
         height: 100vh;
-        margin-top: 0;
+        margin-left: 0;
         padding-top: 0;
-        top: 100%;
+        top: 0;
         transition: all 0.5s;
     }
 
-    .sidebar .show_menu{
+    .sidebar.show_menu{
         top: 100%;
-
     }   
 
     .sidebar .menu ul{
@@ -316,12 +338,21 @@ p{
         flex-direction: column;
         justify-content: space-evenly;
         font-size: 2rem;
-        text-align: center;
-        padding-top: 4rem;
+        padding-top: 60%;
+        padding-left: 4rem;
+    }
+
+    .sidebar .redes-sociais{
+
+        z-index: 151;
+        height: 1rem;
+        width: 1rem;
+        bottom: 10rem;
     }
 
     .sidebar .menu ul li{
         padding-bottom: 3rem;
+    
     }
 
 }
